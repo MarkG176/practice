@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Quicksand:wght@300..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: < weight >;
+    font-style: normal;
+    /*background: #df8f8f;*/
+}
+
+nav {
+    background: #dcb7b0;
+    box-shadow: 20px 10px 9px -3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    /*    the line below positions to the right*/
+    justify-content: flex-end;
+    align-items: center;
+    /*    the line below removes bullets*/
+    list-style: none;
+    height: 60px
+
+}
+
+nav li {
+    padding: 0px 24px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9f3131;
+    font-weight: 600;
+    transition: color 400ms, font-size 400ms;
+}
+nav a:hover{
+    color: #3c060d;
+    font-size:2.08em;
+    
+}
+
+footer{
+    border-top: 1px solid #9f3131;
+}
+
+footer .social-links{
+    height: 120px;
+    background:#3c060d;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a{
+    margin: 0.18px;
+}
+
+.social-links img{
+    width: 40px;
+    height: 40px;
+}
+
+footer .copyright{
+    padding
+}
+
+.hero {
+    min-height: 100vh;
+    background: url("bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*line below does the parallax*/
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero div{
+    width: 80%;
+    background: rgba(100,100,100,0.7);
+    padding: 28px 16px;
+    border-radius: 15px;
+}
+
+.hero h2{
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 2em;
+}
+
+.hero p{
+    text-align: justify;
+    line-height: 24px;
+}
+
+.features{
+    display: flex;
+}
+
+.left-image, .right-text{
+    width: 50%;
+}
+
+.left-image img{
+    width: 100%;
+ }
+
+.right-div{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0;
+    text-align: center;
+}
